@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablet Sędziego</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="tablet-frame">
+        <div id="tablet-screen">
+            <div id="tablet-header">
+                <span class="icon">📱</span>
+                <span class="title">Tablet Sędziego</span>
+                <button id="close-btn">✕</button>
+            </div>
+            <div id="tablet-content">
+                <div id="players-section">
+    <h3>Lista Graczy</h3>
+    <ul id="players-list"></ul>
+</div>
+                <div id="sentence-section" style="display:none;">
+    <h3>Akcje dla: <span id="selected-player"></span></h3>
+    <div class="tabs">
+        <button class="tab-btn" id="tab-akcje" onclick="showTab('akcje')">Akcje</button>
+        <button class="tab-btn" id="tab-wyrok" onclick="showTab('wyrok')">Wyrok</button>
+        <button class="tab-btn" id="tab-historia" onclick="showTab('historia')">Historia wyroków</button>
+    </div>
+    <div id="tab-akcje-content" class="tab-content">
+        <div class="action-block">
+            <input type="text" id="wanted-reason" placeholder="Powód poszukiwania..." />
+            <button id="set-wanted">Nadaj status POSZUKIWANY</button>
+        </div>
+        <hr />
+        <div class="action-block">
+            <h4>Wyrok zaoczny</h4>
+            <input type="number" id="sentence-input" placeholder="Ilość minut więzienia..." min="1" max="999" />
+            <button id="send-sentence">Nadaj wyrok zaoczny</button>
+        </div>
+        <button id="pardon">Ułaskaw</button>
+        <button id="back">Powrót</button>
+    </div>
+    <div id="tab-wyrok-content" class="tab-content" style="display:none;">
+        <form id="sentence-form">
+            <input type="text" id="sentence-imie" placeholder="Imię" required />
+            <input type="text" id="sentence-nazwisko" placeholder="Nazwisko" required />
+            <input type="text" id="sentence-powod" placeholder="Powód wyroku" required />
+            <input type="date" id="sentence-data" required />
+            <textarea id="sentence-tresc" placeholder="Treść wyroku" rows="4" required></textarea>
+            <button type="submit">Zapisz wyrok</button>
+        </form>
+    </div>
+    <div id="tab-historia-content" class="tab-content" style="display:none;">
+        <h4>Historia wyroków</h4>
+        <ul id="sentence-history"></ul>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
