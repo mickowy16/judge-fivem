@@ -1,0 +1,46 @@
+{
+    "1": [
+        {
+            "nazwisko": "wdwd",
+            "data": "2025-07-11",
+            "imie": "wdwd",
+            "powod": "wddd",
+            "tresc": "sadasdasd"
+        },
+        {
+            "nazwisko": "Srama",
+            "data": "2025-07-09",
+            "imie": "Andrzej",
+            "powod": "art 148 kk",
+            "tresc": "W dniu 20.04.2025 w m. LA na ulicy Boolywood dokonał zabójstwa Anny German w ten sposób, że dźgnął ją dwukrotnie w brzuch, a następnie nieudzielając jej pomocy oddalił się z miejsca pojazdem mechanicznym marki Mercedes o numerach rejestracyjnych PJA "
+        },
+        {
+            "nazwisko": "asas",
+            "data": "2025-07-09",
+            "imie": "sas",
+            "powod": "asas",
+            "tresc": "sasas"
+        },
+        {
+            "nazwisko": "asdasd",
+            "data": "2025-07-16",
+            "imie": "dsad",
+            "powod": "sadasd",
+            "tresc": "asdasd"
+        },
+        {
+            "nazwisko": "asas",
+            "data": "2025-07-16",
+            "imie": "sas",
+            "powod": "asas",
+            "tresc": "sasas"
+        },
+        {
+            "tresc": "sasas",
+            "data": "2025-07-16",
+            "imie": "sas",
+            "powod": "asas",
+            "nazwisko": "asas"
+        }
+    ]
+}
